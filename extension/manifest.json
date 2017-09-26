@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "GitHub Repository Tab Enhancements",
+  "description": "This extension adds useful information to a GitHub user's repository page.",
+  "version": "1.0",
+
+  "content_scripts": [
+  	{
+  		"matches": ["https://github.com/*?tab=repositories"],
+  		"js": ["inject.js"]
+  	}
+  ],
+
+  "permissions": [
+    "https://ajax.googleapis.com/"
+  ]
+
+}
